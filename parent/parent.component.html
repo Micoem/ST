@@ -1,0 +1,7 @@
+<div class="scope">
+  <img [src]="parentSrc" alt="">
+  <h3>Parent, child component</h3>
+  <div *ngFor="let i of avatar">
+    <app-input [varinput]="i.url" [name]="i.name" (varoutput)="childHaveEvent($event)"></app-input>
+  </div>
+</div>
